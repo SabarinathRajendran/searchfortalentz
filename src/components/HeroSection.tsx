@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import InterviewScene3D from './InterviewScene3D';
 import { ArrowRight, Star } from 'lucide-react';
+import hiringIllustration from '@/assets/hiring-illustration.png';
 
 export default function HeroSection() {
   return (
@@ -69,14 +70,14 @@ export default function HeroSection() {
             </div>
           </div> */}
           
-          {/* Temporary placeholder with logo */}
-          <div className="relative h-[600px] animate-scale-in flex items-center justify-center">
+          {/* Hiring Illustrations */}
+          <div className="relative h-[600px] animate-scale-in">
             <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-3xl blur-3xl"></div>
-            <div className="relative h-full rounded-3xl overflow-hidden shadow-elegant bg-card/50 backdrop-blur-sm flex items-center justify-center">
+            <div className="relative h-full rounded-3xl overflow-hidden shadow-elegant bg-card/50 backdrop-blur-sm">
               <img 
-                src="/lovable-uploads/202a09b8-8214-4823-8c73-0d05ae2b6322.png" 
-                alt="Search For Talentz Logo" 
-                className="w-80 h-80 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                src={hiringIllustration} 
+                alt="Professional hiring and recruitment illustration" 
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
