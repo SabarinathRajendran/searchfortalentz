@@ -10,7 +10,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/202a09b8-8214-4823-8c73-0d05ae2b6322.png" 
+              alt="Search For Talentz Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Search For Talentz
             </h1>

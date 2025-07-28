@@ -61,11 +61,23 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right 3D Scene */}
-          <div className="relative h-[600px] animate-scale-in">
+          {/* Right 3D Scene - Commented out for now */}
+          {/* <div className="relative h-[600px] animate-scale-in">
             <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-3xl blur-3xl"></div>
             <div className="relative h-full rounded-3xl overflow-hidden shadow-elegant">
               <InterviewScene3D />
+            </div>
+          </div> */}
+          
+          {/* Temporary placeholder with logo */}
+          <div className="relative h-[600px] animate-scale-in flex items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-3xl blur-3xl"></div>
+            <div className="relative h-full rounded-3xl overflow-hidden shadow-elegant bg-card/50 backdrop-blur-sm flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/202a09b8-8214-4823-8c73-0d05ae2b6322.png" 
+                alt="Search For Talentz Logo" 
+                className="w-80 h-80 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+              />
             </div>
           </div>
         </div>

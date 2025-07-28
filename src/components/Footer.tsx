@@ -9,9 +9,16 @@ export default function Footer() {
           
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Search For Talentz
-            </h3>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/202a09b8-8214-4823-8c73-0d05ae2b6322.png" 
+                alt="Search For Talentz Logo" 
+                className="w-8 h-8 object-contain"
+              />
+              <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+                Search For Talentz
+              </h3>
+            </div>
             <p className="text-muted-foreground">
               Connecting exceptional talent with forward-thinking companies worldwide.
             </p>
