@@ -1,6 +1,6 @@
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Box, Sphere, Text3D, useTexture } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
 
 // Animated person walking into interview room
@@ -8,7 +8,7 @@ function WalkingPerson() {
   const personRef = useRef<THREE.Group>(null);
   const walkCycle = useRef(0);
 
-  useFrame((state) => {
+  useFrame(() => {
     if (personRef.current) {
       walkCycle.current += 0.02;
       
@@ -24,30 +24,36 @@ function WalkingPerson() {
   return (
     <group ref={personRef} position={[-3, 0, 0]}>
       {/* Head */}
-      <Sphere args={[0.3]} position={[0, 1.7, 0]}>
+      <mesh position={[0, 1.7, 0]}>
+        <sphereGeometry args={[0.3, 16, 16]} />
         <meshStandardMaterial color="#FFDBAC" />
-      </Sphere>
+      </mesh>
       
       {/* Body */}
-      <Box args={[0.6, 1, 0.3]} position={[0, 0.8, 0]}>
+      <mesh position={[0, 0.8, 0]}>
+        <boxGeometry args={[0.6, 1, 0.3]} />
         <meshStandardMaterial color="#2563EB" />
-      </Box>
+      </mesh>
       
       {/* Arms */}
-      <Box args={[0.15, 0.8, 0.15]} position={[-0.4, 0.8, 0]}>
+      <mesh position={[-0.4, 0.8, 0]}>
+        <boxGeometry args={[0.15, 0.8, 0.15]} />
         <meshStandardMaterial color="#FFDBAC" />
-      </Box>
-      <Box args={[0.15, 0.8, 0.15]} position={[0.4, 0.8, 0]}>
+      </mesh>
+      <mesh position={[0.4, 0.8, 0]}>
+        <boxGeometry args={[0.15, 0.8, 0.15]} />
         <meshStandardMaterial color="#FFDBAC" />
-      </Box>
+      </mesh>
       
       {/* Legs */}
-      <Box args={[0.2, 0.8, 0.2]} position={[-0.15, -0.2, 0]}>
+      <mesh position={[-0.15, -0.2, 0]}>
+        <boxGeometry args={[0.2, 0.8, 0.2]} />
         <meshStandardMaterial color="#1E293B" />
-      </Box>
-      <Box args={[0.2, 0.8, 0.2]} position={[0.15, -0.2, 0]}>
+      </mesh>
+      <mesh position={[0.15, -0.2, 0]}>
+        <boxGeometry args={[0.2, 0.8, 0.2]} />
         <meshStandardMaterial color="#1E293B" />
-      </Box>
+      </mesh>
     </group>
   );
 }
@@ -57,32 +63,38 @@ function InterviewRoom() {
   return (
     <group>
       {/* Floor */}
-      <Box args={[10, 0.1, 8]} position={[0, -1, 0]}>
+      <mesh position={[0, -1, 0]}>
+        <boxGeometry args={[10, 0.1, 8]} />
         <meshStandardMaterial color="#F1F5F9" />
-      </Box>
+      </mesh>
       
       {/* Conference table */}
-      <Box args={[3, 0.1, 1.5]} position={[2, 0, 0]}>
+      <mesh position={[2, 0, 0]}>
+        <boxGeometry args={[3, 0.1, 1.5]} />
         <meshStandardMaterial color="#8B4513" />
-      </Box>
+      </mesh>
       
       {/* Chairs */}
-      <Box args={[0.5, 0.8, 0.5]} position={[1, 0.4, 0]}>
+      <mesh position={[1, 0.4, 0]}>
+        <boxGeometry args={[0.5, 0.8, 0.5]} />
         <meshStandardMaterial color="#1E293B" />
-      </Box>
-      <Box args={[0.5, 0.8, 0.5]} position={[3, 0.4, 0]}>
+      </mesh>
+      <mesh position={[3, 0.4, 0]}>
+        <boxGeometry args={[0.5, 0.8, 0.5]} />
         <meshStandardMaterial color="#1E293B" />
-      </Box>
+      </mesh>
       
       {/* Wall with door */}
-      <Box args={[0.2, 3, 8]} position={[5, 1, 0]}>
+      <mesh position={[5, 1, 0]}>
+        <boxGeometry args={[0.2, 3, 8]} />
         <meshStandardMaterial color="#E2E8F0" />
-      </Box>
+      </mesh>
       
       {/* Door opening */}
-      <Box args={[0.3, 2, 1]} position={[4.8, 0.5, -2]}>
+      <mesh position={[4.8, 0.5, -2]}>
+        <boxGeometry args={[0.3, 2, 1]} />
         <meshStandardMaterial color="#3B82F6" transparent opacity={0.3} />
-      </Box>
+      </mesh>
     </group>
   );
 }
@@ -100,15 +112,18 @@ function TalentIcons() {
   return (
     <group ref={iconsRef}>
       {/* Floating spheres representing talents */}
-      <Sphere args={[0.2]} position={[4, 3, 2]}>
+      <mesh position={[4, 3, 2]}>
+        <sphereGeometry args={[0.2, 16, 16]} />
         <meshStandardMaterial color="#10B981" emissive="#10B981" emissiveIntensity={0.2} />
-      </Sphere>
-      <Sphere args={[0.15]} position={[-2, 2.5, 3]}>
+      </mesh>
+      <mesh position={[-2, 2.5, 3]}>
+        <sphereGeometry args={[0.15, 16, 16]} />
         <meshStandardMaterial color="#8B5CF6" emissive="#8B5CF6" emissiveIntensity={0.2} />
-      </Sphere>
-      <Sphere args={[0.18]} position={[3, 4, -2]}>
+      </mesh>
+      <mesh position={[3, 4, -2]}>
+        <sphereGeometry args={[0.18, 16, 16]} />
         <meshStandardMaterial color="#F59E0B" emissive="#F59E0B" emissiveIntensity={0.2} />
-      </Sphere>
+      </mesh>
     </group>
   );
 }
@@ -116,15 +131,19 @@ function TalentIcons() {
 export default function InterviewScene3D() {
   return (
     <div className="w-full h-full">
-      <Canvas camera={{ position: [0, 2, 8], fov: 60 }}>
+      <Canvas 
+        camera={{ position: [0, 2, 8], fov: 60 }}
+        gl={{ antialias: true }}
+        onCreated={({ gl }) => {
+          gl.setClearColor('#f8fafc');
+        }}
+      >
         {/* Lighting */}
         <ambientLight intensity={0.4} />
         <directionalLight 
           position={[10, 10, 5]} 
           intensity={1} 
           castShadow
-          shadow-mapSize-width={2048}
-          shadow-mapSize-height={2048}
         />
         <pointLight position={[-10, 10, -10]} intensity={0.5} color="#3B82F6" />
         
