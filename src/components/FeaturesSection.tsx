@@ -61,7 +61,7 @@ export default function FeaturesSection() {
             <div className="relative bg-card rounded-3xl p-8 shadow-elegant">
               <div className="space-y-6">
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-2">Hiring Dashboard</h3>
+                  <h3 className="text-2xl font-bold mb-2">Hiring Process</h3>
                   <p className="text-muted-foreground">Real-time analytics and insights</p>
                 </div>
                 

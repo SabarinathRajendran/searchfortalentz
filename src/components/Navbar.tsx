@@ -16,7 +16,7 @@ export default function Navbar() {
               alt="Search For Talentz Logo" 
               className="w-10 h-10 object-contain"
             />
-            <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <h1 className="text-2xl font-bold">
               Search For Talentz
             </h1>
           </div>

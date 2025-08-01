@@ -23,8 +23,8 @@ export default function Footer() {
               Connecting exceptional talent with forward-thinking companies worldwide.
             </p>
             <div className="flex space-x-4">
-              <Linkedin className="w-5 h-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
-              <Twitter className="w-5 h-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
+              <Linkedin onClick={() => { window.open('https://www.linkedin.com/company/searchfortalentz','_blank')}} className="w-5 h-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
+              {/* <Twitter className="w-5 h-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" /> */}
               <Mail className="w-5 h-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
             </div>
           </div>
@@ -57,12 +57,12 @@ export default function Footer() {
             <div className="space-y-2 text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span>hello@searchfortalentz.com</span>
+                <span>hr@searchfortalentz.com</span>
               </div>
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
                 <span>+1 (555) 123-4567</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

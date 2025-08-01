@@ -2,24 +2,25 @@ import { Button } from '@/components/ui/button';
 import InterviewScene3D from './InterviewScene3D';
 import { ArrowRight, Star } from 'lucide-react';
 import hiringIllustration from '@/assets/hiring-illustration.png';
+import hiringIllustration2 from '@/assets/undraw_job-offers_55y0.svg';
 
 export default function HeroSection() {
   return (
     <section className="min-h-screen flex items-center pt-16 bg-gradient-subtle">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-48 items-center">
           
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <div className="flex items-center">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-primary text-primary" />
                   ))}
                 </div>
                 <span className="text-sm text-muted-foreground">Trusted by 500+ companies</span>
-              </div>
+              </div> */}
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 Find the{' '}
@@ -46,7 +47,7 @@ export default function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
+            {/* <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">95%</div>
                 <div className="text-sm text-muted-foreground">Success Rate</div>
@@ -59,7 +60,7 @@ export default function HeroSection() {
                 <div className="text-3xl font-bold text-primary">10k+</div>
                 <div className="text-sm text-muted-foreground">Talents Placed</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right 3D Scene - Commented out for now */}
@@ -71,11 +72,10 @@ export default function HeroSection() {
           </div> */}
           
           {/* Hiring Illustrations */}
-          <div className="relative h-[600px] animate-scale-in">
-            <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-3xl blur-3xl"></div>
-            <div className="relative h-full rounded-3xl overflow-hidden shadow-elegant bg-card/50 backdrop-blur-sm">
+          <div className="relative">
+            <div className="relative h-full overflow-hidden">
               <img 
-                src={hiringIllustration} 
+                src={hiringIllustration2} 
                 alt="Professional hiring and recruitment illustration" 
                 className="w-full h-full object-cover"
               />

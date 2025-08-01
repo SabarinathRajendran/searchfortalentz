@@ -15,7 +15,6 @@ export default function CTASection() {
             </h2>
             <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
               Join thousands of companies who trust Search For Talentz to build their dream teams. 
-              Start your free trial today.
             </p>
           </div>
 
@@ -26,16 +25,16 @@ export default function CTASection() {
               className="bg-white/10 border-white/20 text-primary-foreground placeholder:text-primary-foreground/60"
             />
             <Button variant="secondary" size="lg" className="group">
-              Get Started
+              Contact Us
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-sm text-primary-foreground/60">
+          {/* <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-sm text-primary-foreground/60">
             <span>✓ No credit card required</span>
             <span>✓ 14-day free trial</span>
             <span>✓ Cancel anytime</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
