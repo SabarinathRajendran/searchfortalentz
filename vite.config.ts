@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/talent-walkin-page",
+  base: "/searchfortalentz",
   plugins: [
     react(),
     mode === 'development' &&
