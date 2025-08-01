@@ -6,7 +6,7 @@ import hiringIllustration2 from '@/assets/undraw_job-offers_55y0.svg';
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center pt-16 bg-gradient-subtle">
+    <section className="min-h-screen flex items-center pt-16 bg-gradient-subtle" role="banner">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-48 items-center">
           
@@ -31,7 +31,8 @@ export default function HeroSection() {
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-2xl">
-                We connect top companies with exceptional talent through our AI-powered matching system. 
+                Leading HR recruitment agency specializing in talent acquisition, executive search, and staffing solutions. 
+                We connect top companies with exceptional talent through our AI-powered matching system and expert recruitment services.
                 Transform your hiring process with precision, speed, and quality.
               </p>
             </div>

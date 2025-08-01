@@ -36,18 +36,18 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-24 bg-background">
+    <section id="services" className="py-24 bg-background" role="main" aria-labelledby="services-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Why Companies Choose{' '}
+          <h2 id="services-heading" className="text-3xl sm:text-4xl font-bold mb-4">
+            Premier HR Recruitment Services - Why Companies Choose{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Search For Talentz
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We revolutionize talent acquisition with cutting-edge technology and human expertise, 
-            delivering exceptional results for forward-thinking companies.
+            We revolutionize talent acquisition and recruitment with cutting-edge AI technology and expert HR consulting, 
+            delivering exceptional hiring results for forward-thinking companies across all industries.
           </p>
         </div>
 

@@ -31,17 +31,17 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-24 bg-background">
+    <section id="testimonials" className="py-24 bg-background" role="region" aria-labelledby="testimonials-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            What Our{' '}
+          <h2 id="testimonials-heading" className="text-3xl sm:text-4xl font-bold mb-4">
+            Client Success Stories - What Our{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Clients Say
+              Recruitment Clients Say
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join hundreds of satisfied companies who have transformed their hiring process with us.
+            Join hundreds of satisfied companies who have transformed their talent acquisition and hiring process with our expert HR recruitment services.
           </p>
         </div>
 
